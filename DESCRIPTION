@@ -1,0 +1,23 @@
+Package: covequal
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: as.person(c(
+    "Maxime Turgeon <maxime.turgeon@mail.mcgill.ca> [aut, cre]", 
+    "Kevin McGregor <kevin.mcgregor@mail.mcgill.ca> [dsr]"
+  ))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+Depends:
+    R (>= 3.0.0)
+Imports:
+    RMTstat,
+    stats,
+    corpcor
+License: GPL (>=2)
+LazyData: true
+URL: http://github.com/turgeonmaxime/covequal
+BugReports: http://github.com/turgeonmaxime/covequal/issues
+Suggests:
+    knitr
+VignetteBuilder: knitr
