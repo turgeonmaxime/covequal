@@ -1,0 +1,20 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: r
+r:
+  - release
+  - devel
+sudo: false
+cache: packages
+
+r_packages:
+  - corpcor
+  - RMTstat
+  - covr
+
+after_success:
+  - Rscript -e 'library(covr); codecov()'
+
+notifications:
+  email:
+    - maxime.turgeon@mail.mcgill.ca
