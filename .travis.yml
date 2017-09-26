@@ -1,0 +1,15 @@
+language: r
+r:
+  - release
+  - devel
+sudo: false
+cache: packages
+
+r_check_args: --as-cran 
+
+r_binary_packages:
+  - knitr
+
+notifications:
+  email:
+    - maxime.turgeon@mail.mcgill.ca
