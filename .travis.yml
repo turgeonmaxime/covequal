@@ -1,5 +1,3 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: r
 r:
   - release
@@ -7,9 +5,10 @@ r:
 sudo: false
 cache: packages
 
+r_check_args: --as-cran 
+
 r_packages:
-  - corpcor
-  - RMTstat
+  - knitr
   - covr
 
 after_success:
