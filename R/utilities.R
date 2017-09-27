@@ -46,7 +46,7 @@ permutation <- function(X, Y, nperm) {
     }
     combined_data <- rbind(first_mat, second_mat)
     n1 <- nrow(first_mat)
-    n2 <- second_mat
+    n2 <- nrow(second_mat)
     replicate(nperm, {
         indices <- sample(1:(n1 + n2), n1)
         first_mat_perm <- combined_data[indices,]

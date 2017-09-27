@@ -21,9 +21,9 @@ test_covequal <- function(X, Y, inference = c("TW", "permutation"), nperm) {
                         "TW" = 25,
                         "permutation" = 500)
     }
-    stopifnot(is.integer(nperm))
+    # stopifnot(is.integer(nperm))
 
-    p <- ncol(X)
+    # p <- ncol(X)
     n1 <- nrow(X)
     n2 <- nrow(Y)
 
