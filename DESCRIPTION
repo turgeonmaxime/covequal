@@ -19,7 +19,6 @@ LazyData: true
 URL: http://github.com/turgeonmaxime/covequal
 BugReports: http://github.com/turgeonmaxime/covequal/issues
 Suggests:
-    knitr,
     testthat,
     covr
 VignetteBuilder: knitr
