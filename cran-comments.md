@@ -1,3 +1,8 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* filled in the MIT license template as required.
+
 ## Test environments
 * local Ubuntu 14.04, R 3.4.1
 * Ubuntu 12.04 (on travis-ci), (devel and release)
