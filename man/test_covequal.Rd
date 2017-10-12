@@ -22,3 +22,8 @@ A list containing the test statistic and the p-value.
 Uses Roy's union-intersection principle for testing for equality of covariance matrices between
 two samples. Also provides p-values.
 }
+\examples{
+X <- matrix(rnorm(50*100), ncol = 100)
+Y <- matrix(rnorm(40*100), ncol = 100)
+test_covequal(X, Y, inference = "TW", nperm = 10)
+}

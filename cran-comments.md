@@ -1,7 +1,7 @@
 ## Resubmission
 This is a resubmission. In this version I have:
 
-* filled in the MIT license template as required.
+* added a small executable example to the documentation.
 
 ## Test environments
 * local Ubuntu 14.04, R 3.4.1

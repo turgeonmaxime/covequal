@@ -11,6 +11,10 @@
 #' @export
 #' @importFrom corpcor fast.svd
 #' @importFrom RMTstat ptw
+#' @examples
+#' X <- matrix(rnorm(50*100), ncol = 100)
+#' Y <- matrix(rnorm(40*100), ncol = 100)
+#' test_covequal(X, Y, inference = "TW", nperm = 10)
 test_covequal <- function(X, Y, inference = c("TW", "permutation"), nperm) {
     stopifnot(is.matrix(X), is.matrix(Y),
               ncol(X) == ncol(Y))
@@ -18,7 +22,7 @@ test_covequal <- function(X, Y, inference = c("TW", "permutation"), nperm) {
     inference <- match.arg(inference, c("TW", "permutation"))
     if (missing(nperm)) {
         nperm <- switch(inference,
-                        "TW" = 25,
+                        "TW" = 50,
                         "permutation" = 500)
     }
     # stopifnot(is.integer(nperm))
