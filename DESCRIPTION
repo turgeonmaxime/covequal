@@ -1,7 +1,7 @@
 Package: covequal
 Type: Package
 Title: Test for Equality of Covariance Matrices
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: person("Maxime", "Turgeon",
  email = "maxime.turgeon@mail.mcgill.ca", role = c("aut", "cre"))
 Description: Computes p-values using the largest root test using 
